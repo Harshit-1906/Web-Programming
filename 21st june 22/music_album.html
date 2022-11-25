@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: text-warning;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: lightgrey;
+}
+</style>
+</head>
+<body>
+  <div class="container bg-text-warning">
+
+  <marquee><h1 style="font-family: algerian;">MUSIC ALBUM USING JQUERY</h1></marquee>
+
+
+<div class="container row ">
+ <div class="column">
+  <img src="image3.jpg" alt="Snow" style="width:33%;height: 50vh;" id="one">
+  
+  </div>
+
+</div>
+<script>
+  $(document).ready(function()
+  {
+      var audio = new Audio("C:/Users/HARSHIT PRASAD/Desktop/Old Songs/audio1.mp3");
+      $("#one").mouseenter(function() {
+       
+        audio.play();
+    });
+      $("#one").mouseout(function() {
+        
+        audio.pause();
+    });
+  });
+
+     
+     
+</script>
+</div>
+
+</body>
+</html>

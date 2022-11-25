@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Customer Details</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		form
+		{
+			font-size: 20px;
+			font-family: algerian;
+			background-color: hotpink;
+			color: black;
+			border: 2px solid black;
+		}
+
+		
+	</style>
+</head>
+<body>
+	
+	<form >
+		<input type="text" name="name" id="name" >
+		<input type="email" name="Emailid" id="email">
+		<input type="text" name="Mno" id="mno">
+		<button type="button" id="btnAdd">Add Details </button>
+	</form><br>
+
+	<table style="border: 2px solid black;background-color: rosybrown;color: black;font-size: 20px;font-family: algerian;padding:5px">
+			
+			<thead>
+				<th>Name</th>
+				<th>Emailid </th>
+				<th>Mno</th>
+			</thead>
+
+			<tbody>
+				
+				
+			</tbody>
+		</table>
+	
+	<script type="text/javascript">
+	$(document).ready(function () {
+		
+		
+
+		
+			$("#btnAdd").click(function(){
+				var x = $("#name").val();
+				var y = $("#Emailid").val();
+				var z = $("#Mno").val();
+
+			
+			let a= "<tr><td>"+x+"</td><td>"+y+"</td><td>"+z+"</tr>";
+			$("tbody").append(a);
+			});
+		
+		
+	
+	})	;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jquery Add or Remove </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		#videosList {
+ max-width: 600px; 
+  overflow: hidden;
+}
+
+.video {
+  background-image: url('https://img.youtube.com/vi/nZcejtAwxz4/maxresdefault.jpg');
+  height: 330px;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
+	</style>
+</head>
+<body>
+	<div id="videosList">           
+
+<div class="video">
+    <video class="thevideo" loop preload="none" controls>
+      <source src="https://giant.gfycat.com/VerifiableTerrificHind.mp4" type="video/mp4">
+      <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm">
+    Your browser does not support the video tag.
+    </video>
+  </div>
+  Hover mouse over video. Desktop only [ Obviously! ;) ]
+</div>
+	<button type="button" id="btnAdd">Add row </button>
+
+
+<script type="text/javascript">
+	$(document).ready(function () {
+	
+	var figure = $(".video").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+}
+
+			
+		
+	
+
+		
+	
+	})	;
+</script>
+</body>
+</html>

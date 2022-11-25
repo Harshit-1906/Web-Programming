@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: lightgrey;
+}
+</style>
+</head>
+<body>
+
+<h1>MUSIC USING JQUERY</h1>
+
+
+<div class="container row ">
+ <div class="column">
+  <img src="image1.jpg" alt="Snow" style="width:33%;height: 50vh;" id="one">
+   <img src="images/mj2.jpg" alt="Snow" style="width:33%;height: 50vh" id="second">
+    <img src="images/mj3.jpg" alt="Snow" style="width:33%;height:50vh" id="third">
+  </div>
+  <div class= "column">
+     <img src="images/mj4.jpg" alt="Snow" style="width:33%;height: 50vh;" id="fourth">
+   <img src="images/mj5.jpg" alt="Snow" style="width:33%;height: 50vh;" id="fifth">
+   <img src="images/mj6.jpg" alt="Snow" style="width:33%;height: 50vh" id="sixth">
+  </div>
+
+</div>
+<script>
+    $(document).ready(function()
+      {
+        $("#one").click(function() {
+  var audio = new Audio("C:\Users\HARSHIT PRASAD\Desktop\Old Songs\001(341)Tere Pyar Ki Tamnna - Twaif.mp3");
+  audio.play();
+});
+        $("#second").click(function() {
+  var audio = new Audio("album/Valam Avo Ne.mp3");
+  audio.play();
+});
+        $("#third").click(function() {
+  var audio = new Audio("album/Dekha Ek Khwab To Ye Silsile Hue.mp3");
+  audio.play();
+});
+         $("#fourth").click(function() {
+  var audio = new Audio("album/Kesariya Tera Ishq ! Hindi ! Love.mp3");
+  audio.play();
+});
+            $("#fifth").hover(function() {
+  var audio = new Audio("album/Gudiya re gudiya- ye jawani hai deewani.mp3");
+  audio.play();
+});
+               $("#sixth").click(function() {
+  var audio = new Audio("album/Locked Away ! Adam Levine ! English ! Song.mp3");
+  audio.play();
+});
+
+      });
+</script>
+
+</body>
+</html>

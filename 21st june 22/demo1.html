@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jquery Add or Remove </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		hello world 
+	</div>
+
+	<img src="image1.jpg" style="width:200px;height:200px" id="brand">
+	<button type="button" id="btnAfter">After </button>
+	<button type="button" id="btnBefore">Before </button>
+	<button type="button" id="btnAppend">Append text </button>
+	<button type="button" id="btnPrepend">Prepend </button>
+
+
+<script type="text/javascript">
+	$(document).ready(function () {
+	$("#btnAfter").click(function(){
+			//$("#brand").after("<p>this is para</p>");	
+			$("#brand").after("<img src='image2.jpg'>");	
+
+		});
+	$("#btnBefore").click(function(){
+			//$("#brand").after("<p>this is para</p>");	
+			$("#brand").before("<img src='image2.jpg'>");	
+
+		});
+		$("#btnAppend").click(function(){
+			$("div").append("<p>this is para</p>");	
+			
+		});
+		$("#btnPrepend").click(function(){
+			$("div").prepend("<p>this is para</p>");	
+			//$("#brand").after("<img src='image2.jpg'");	
+
+		});
+	})	;
+</script>
+</body>
+</html>

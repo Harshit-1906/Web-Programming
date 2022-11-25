@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jquery Add or Remove </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<table border="2">
+		<thead>
+			<th>Name</th>
+			<th>Mno </th>
+		</thead>
+		<tbody>
+			
+		</tbody>
+
+	</table>
+	<button type="button" id="btnAdd">Add row </button>
+
+
+<script type="text/javascript">
+	$(document).ready(function () {
+	
+			
+		
+		for (var i = 0; i<5; i++) {
+			$("#btnAdd").click(function(){
+			var x = prompt("enter name");
+			var y = prompt("enter mno ");
+			let z= "<tr><td>"+x+"</td><td>"+y+"</td></tr>";
+			$("tbody").append(z);
+			});
+		}
+		
+
+		
+	
+	})	;
+</script>
+</body>
+</html>
