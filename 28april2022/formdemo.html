@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration form </title>
+</head>
+<body>
+
+	<h1>Registration form </h1>
+
+	<form>
+
+		Bank IFSC Code : <input type="text" name="ifsc" value="BARB000ATL" readonly>
+		<br>
+		
+		<label for="uname">
+			Enter Username
+		</label> 
+		<input type="text" name="uname"  placeholder="Enter Username " required>
+
+		<br>
+
+		<label for="pwd">
+			Enter Password
+		</label> 
+		<input type="Password" name="pwd" required>
+
+
+		<br>
+		<label for="Emailid">
+			Enter Emailid 
+		</label> 
+		<input type="email" name="Emailid" placeholder="example@gmail.com">
+
+
+		<br>
+		<label for="age">
+			Enter Age 
+		</label> 
+		<input type="number" name="age">
+
+		<br>
+		<label for="gender">
+			Enter Gender 
+		</label> 
+		<input type="radio" name="gender">Male
+		<input type="radio" name="gender">Female
+
+		<br>
+		<label for="sub1">
+			Choose Your Subjects  
+		</label> 
+		<input type="checkbox" name="sub1">C Programming
+		<input type="checkbox" name="sub2">Java 
+		<input type="checkbox" name="sub3">Python
+		<input type="checkbox" name="sub4">Web-Development
+		<input type="checkbox" name="sub5">MySQL
+
+		<br>
+
+		<label for="image">
+			Upload your image 
+		</label> 
+		<input type="file" name="image">
+
+		<br>
+
+		<label for="dob">
+			Enter DOB
+		</label> 
+		<input type="date" name="dob">
+
+		<br>
+
+		<label for="doj">
+			Enter Date & time of joining 
+		</label> 
+		<input type="datetime-local" name="doj">
+
+		<br>
+
+		<label for="time">
+			Enter Birt time 
+		</label> 
+		<input type="time" name="time">
+
+
+		<br>
+
+		<label for="dob">
+			Select your city 
+		</label> 
+		<select name="city">
+			
+			<option>Pune</option>
+			<option>Banglore </option>
+			<option>Delhi </option>
+			<option>Vadodara</option>
+		</select>
+
+		<br>
+
+		<label for="color">
+			Choose your favourite color 
+		</label> 
+		<input type="color" name="color">
+
+		<br>
+
+		<label for="msg">
+			Enter Message 
+		</label> 
+		
+		<textarea>
+			Write message .....
+		</textarea>
+		<br>
+
+		<input type="button" name="btn" value="Login">
+		<input type="submit" name="submit" value="Register">
+		<input type="reset" name="reset" value="reset">
+
+
+	</form>
+
+
+</body>
+</html>
