@@ -1,7 +1,7 @@
 <script>
 	$(document).ready(function()
 	{
-		alert("Welcome BMI Result");
+		alert("Welcome to Javascript");
 		
 		};
 
